@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>CANOE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+        <link href="./css/style.css" type="text/css" rel="stylesheet">
+
+        <script defer src="./js/fontawesome-all.min.js"></script>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo"><h2>CANOE</h2></div>
+            <nav class="navigation">
+                <ul>
+
+                    <li class="active clearfix"><a  href="index.html">
+                      <i class="fas fa-users"></i>
+                      Members</a></li>
+                      <li class="clearfix"><a  href="race.html">
+                      <i class="fas fa-ship"></i>
+                      Races</a></li>
+                      <li class="clearfix"><a  href="courses.html">
+                      <i class="fas fa-graduation-cap"></i></i>
+                      Courses</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="main">
+            <div class="page_info">
+                <div class="container">
+
+                    <h1>Members</h1>
+                    <p>Use this page to view and manage members</p>
+                </div>
+            </div>
+            <div class="container">
+
+
+		        <div class="add-member">
+		            <form action="add_member.php">
+		               <button class="button"><i class="fas fa-plus-circle"></i> Add Member
+		               </button>
+		           </form>
+		        </div>
+		        
+				<table class="list_members">
+		           <tr>
+		               <th>#</th>
+		               <th>First Name</th>
+		               <th>Last Name</th>
+		           	   <th>Grade</th>
+	   	               <th></th>
+		           </tr>
+
+		           <tr>
+		               <td>0</td>
+		               <td>Brennan</td>
+		               <td>Butler</td>
+		               <td>A*</td>
+		               <td><form action="display_member.html" method="get">
+		          	        <input type="hidden" name="firstName" value="">
+		                    <input type="hidden" name="lastName" value="">
+		                    <button class="button"><i class="fas fa-search-plus">
+		                    </i> View</button>
+							</form>
+					   </td>
+		           </tr>
+				   <tr>
+		               <td>1</td>
+		               <td>Example</td>
+		               <td>Example</td>
+		               <td>A*</td>
+		               <td><form action="display_member.html" method="get">
+		          	        <input type="hidden" name="firstName" value="">
+		                    <input type="hidden" name="lastName" value="">
+		                    <button class="button"><i class="fas fa-search-plus">
+		                    </i> View</button>
+							</form>
+					   </td>
+		           </tr>
+				   <tr>
+		               <td>2</td>
+		               <td>Example example</td>
+		               <td>example</td>
+		               <td>C</td>
+		               <td><form action="display_member.html" method="get">
+		          	        <input type="hidden" name="firstName" value="">
+		                    <input type="hidden" name="lastName" value="">
+		                    <button class="button"><i class="fas fa-search-plus">
+		                    </i> View</button>
+							</form>
+					   </td>
+		           </tr>
+
+
+		        </table>
+
+			</div>
+        </div>
+    </body>
+</html>

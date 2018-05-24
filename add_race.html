@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>CANOE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+        <link href="./css/style.css" type="text/css" rel="stylesheet">
+
+        <script defer src="./js/fontawesome-all.min.js"></script>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo"><h2>CANOE</h2></div>
+            <nav class="navigation">
+                <ul>
+
+                    <li class="active clearfix"><a  href="index.html">
+                      <i class="fas fa-users"></i>
+                      Members</a></li>
+                      <li class="clearfix"><a  href="race.html">
+                      <i class="fas fa-ship"></i>
+                      Races</a></li>
+                      <li class="clearfix"><a  href="courses.html">
+                      <i class="fas fa-graduation-cap"></i></i>
+                      Courses</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="main">
+            <div class="page_info">
+                <div class="container">
+                <h1>Add Race</h1>
+                <p>Use the following fields to add a new race to the database</p>
+            </div>
+            </div>
+            <div class="container">
+
+
+            <form class="member_form" method="post" action="add_race.html">
+
+                <label for="raceName">Race name:</label>
+                <input type="text" name="raceName" id="raceName"/>
+                <label for="date">Date:</label>
+                <input type="text" name="date" id="date"/>
+                <label for="seriesName">Series name:</label>
+                <input type="text" name="seriesName" id="seriesName"/>
+                <label for="year">Year:</label>
+                <input type="text" name="year" id="year"/>
+                <button class="button" type="submit"><i class="fas fa-plus-circle"></i> Add Race</button>
+            </form>
+        </div>
+
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,282 @@
+html, body, * {
+    padding:0px;
+    margin:0px;
+    font-size:1em;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #f9f9f9;
+    color:#212529;
+}
+
+h1 {
+    font-size:2em;
+    line-height:2em;
+}
+.block_form label {
+    display: block;
+}
+h2 {
+    font-size:1.5em;
+    line-height: 1.5em;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    width:15%;
+    background:#404E67;
+    height:100vh;
+    position:fixed;
+}
+
+.logo {
+    background: #404E67;
+    padding:1em;
+    text-align: center;
+    color:#fff;
+    box-shadow: 1px 0 20px rgba(0,0,0,.1);
+    -moz-box-shadow:1px 0 20px rgba(0,0,0,.1);
+}
+
+.logo h2 {
+    color:#fff;
+}
+
+.navigation li {
+    list-style:none;
+    border-left:2px solid #404E67;
+    padding:1em;
+}
+
+.navigation li.active {
+    border-left:2px solid #1dc5e9;
+}
+
+.navigation li:hover {
+	background:#374359;
+	border-left:2px solid #1dc5e9;
+}
+
+.navigation a {
+    text-decoration: none;
+    color:#c6cacf;
+    width:100%;
+    float:left;
+    font-weight: 300;
+
+}
+
+.fa-accessible-icon {
+  color:#c6cacf;
+}
+.main {
+    margin-left:15%;
+}
+
+table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width:100%;
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+
+tr {
+    text-align: center;
+
+}
+
+th, td {
+    border-bottom:2px solid #ddd;
+    border-right:1px solid #ddd;
+    padding:1em;
+}
+
+th:last-child, td:last-child {
+ border-right:none;
+}
+
+tr:nth-child(even){
+    background: #fff;
+}
+
+button {
+    background: #A1C436;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    padding:0.7em;
+    color:#fff;
+    font-weight:400;
+    cursor:pointer;
+    font-size:0.9em;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+button.red {
+    background: #CD1231;
+}
+
+.add-member a {
+    text-decoration: none;
+}
+
+button svg {
+    margin-right:5px;
+}
+
+.page_info p {
+    color:#929487 ;
+}
+
+.page_info {
+    background: #E8E8F0;
+    border-bottom:1px solid #E3E3E3;
+    box-shadow: 1px 0 10px rgba(0,0,0,.1);
+    -moz-box-shadow:1px 1px 1px rgba(0,0,0,.1);
+    margin-bottom:20px;
+}
+
+.page_info .container {
+    padding:0px;
+}
+
+.member_form label, button {
+    display: block;
+}
+
+.form {
+    margin-bottom: 50px;
+}
+
+.container {
+    width:95%;
+    margin:0px auto;
+    padding:1em;
+
+}
+input[type="text"], input[type="number"], select {
+    border:none;
+    outline:none;
+    border:1px solid #929487;
+    border-radius:5px;
+    margin-top:10px;
+    margin-bottom:10px;
+    background: #fff;
+}
+
+input[type="text"] {
+    padding:0.8em;
+}
+
+select {
+    padding:0.5em;
+}
+.member_form input[type="text"] {
+    width:35%;
+}
+ .member_search {
+     display: inline;
+ }
+
+table.list_members a {
+    text-decoration: none;
+    text-align: center;
+}
+
+table.list_members .button {
+    margin-top:0px;
+    margin-bottom: 0px;
+    margin: auto;
+    display: block;
+}
+
+.flex_container {
+    display: flex;
+    align-items: stretch;
+}
+.profile_info {
+    text-align: center;
+    flex-grow: 3;
+    margin-right: 20px;
+}
+
+.profile_info .grade {
+}
+.profile_info .avatar {
+    background: #404E67;
+    width:100%;
+    height: 270px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.update_profile {
+    flex-grow: 8;
+}
+
+.update_profile .races {
+    margin-bottom: 20px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+@media only screen and (max-width: 1000px)  {
+.sidebar {
+	width:20%;
+}
+.main {
+margin-left:20%;
+}
+}
+
+@media only screen and (max-width: 720px)  {
+.sidebar {
+	width:25%;
+}
+.main {
+margin-left:25%;
+}
+}
+
+@media only screen and (max-width: 560px)  {
+.sidebar {
+	width:30%;
+}
+.main {
+margin-left:30%;
+}
+
+.flex_container {
+    display: block;
+}
+}
+
+@media only screen and (max-width: 400px)  {
+.sidebar {
+	width:40%;
+}
+.main {
+margin-left:40%;
+}
+}

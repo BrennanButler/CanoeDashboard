@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>CANOE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+        <link href="./css/style.css" type="text/css" rel="stylesheet">
+
+        <script defer src="./js/fontawesome-all.min.js"></script>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo"><h2>CANOE</h2></div>
+            <nav class="navigation">
+                <ul>
+
+                    <li class="clearfix"><a  href="index.php">
+                      <i class="fas fa-users"></i>
+                      Members</a></li>
+                      <li class="active clearfix"><a  href="race.html">
+                      <i class="fas fa-ship"></i>
+                      Races</a></li>
+                      <li class="clearfix"><a  href="courses.html">
+                      <i class="fas fa-graduation-cap"></i></i>
+                      Courses</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="main">
+            <div class="page_info">
+                <div class="container">
+
+                    <h1>Race</h1>
+                    <p>Use this page to view and manage races</p>
+                </div>
+            </div>
+            <div class="container">
+
+
+		        <div class="add-member">
+		               <button class="button"><i class="fas fa-plus-circle"></i> Add Race
+		               </button>
+		        </div>
+
+		        <table class="list_members">
+
+		            <tr>
+		            	<th>#</th>
+		            	<th>Series ID</th>
+		            	<th>Race Name</th>
+		            	<th>Race Date</th>
+		            	<th></th>
+		            </tr>
+
+		            <tr>
+		            	<td>0</td>
+		                <td>12</td>
+		                <td>Example Race</td>
+		                <td>20/05/2018</td>
+		                <td><form action="race.html" method="post">
+		                    <input type="hidden" name="raceID" value="">
+		                    <button class="button red">Delete</button>
+							</form>
+						</td>
+		            </tr>
+				</table>
+
+		        <h2>Assign member to race (ID)</h2>
+		        <form class="member_form" action="race.html" method="post">
+		            <label for="memberID">Member ID:</label>
+		            <input type="number" name="memberID" id="memberID">
+		            <label for="raceID">Race ID:</label>
+		            <input type="number" name="raceID" id="raceID">
+		            <button type="submit">Submit</button>
+		        </form>
+
+		        <h2>Assign member to race (Name)</h2>
+		        <form class="member_form" method="post" action="race.html">
+
+		            <label for="firstName">First name:</label>
+		            <input type="text" name="firstName" id="firstName"/>
+		            <label for="lastName">Last name:</label>
+		            <input type="text" name="lastName" id="lastName"/>
+		            <label for="raceName">Race name:</label>
+		            <input type="text" name="raceName" id="raceName"/>
+		            <label for="seriesName">Series name:</label>
+		            <input type="text" name="seriesName" id="seriesName"/>
+		            <label for="year">Year:</label>
+		            <input type="text" name="year" id="year"/>
+		            <button class="button" type="submit"><i class="fas fa-plus-circle"></i> Add Race</button>
+		        </form>
+
+		        <h2>Add a race result</h2>
+		        <form class="member_form" action="race.html" method="post">
+		            <label for="memberID">Member ID:</label>
+		            <input type="number" name="member_id" id="member_id">
+		            <label for="raceID">Race ID:</label>
+		            <input type="number" name="race_id" id="race_id">
+		            <label for="position">Position:</label>
+		            <input type="number" name="position" id="position">
+		            <button type="submit">Submit</button>
+		        </form>
+        	</div>
+        </div>
+    </body>
+</html>
